@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -16,6 +16,7 @@
       <h3 class="py-3">Rock Paper Scissors</h3>
     </header>
     <main class="container-fluid backgroundImg">
+      
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8  text-center">
@@ -35,9 +36,11 @@
         </div>
         <div class="col-2"></div>
       </div>
+      
       <div class="row text-center">
         <div class="col"><h1 id="who-won">Who Won?</h1></div>
       </div>
+      
       <div class="row text-center">
         <div class="col-6">
           <h2 id="player-wins">You have 0 wins</h2>
@@ -46,11 +49,13 @@
           <h2 id="computer-wins">The CPU has 0 wins</h2>
         </div>
       </div>
+      
       <div class="row text-center">
         <div class="col">
           <h1 id="round-winner"></h1>
         </div>
       </div>
+      
       <div class="row text-center">
         <div class="col-12">
           <button class="btn btn-info my-3" id="play-again" hidden onclick="restartButton()">Restart Game?</button>
