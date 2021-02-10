@@ -1,4 +1,8 @@
 body { min-height: 100vh; display: flex; flex-direction: column; }
 header{ height: 10vh;} 
 main{flex-grow: 1;} 
-footer{height: 10vh; }
+footer{height: 3vh; }
+
+.backgroundImg {
+    background-image: url(https://picsum.photos/id/1068/1600/1600);
+}
