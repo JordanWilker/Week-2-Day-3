@@ -16,19 +16,17 @@ function ifRock(){
         cpuItem = "Paper"
         result = "lose"
         console.log("You chose Rock, the CPU chose Paper, you lose");
-        announce()
     }else if(RPS==1){
         playerItem = "Rock"
         cpuItem = "Rock"
         result = "tie"
         console.log("You chose Rock, the CPU chose Rock, you tie");
-        announce()
     }else {
         playerItem = "Rock"
         cpuItem = "Scissors"
         result = "win"
         console.log("You chose Rock, the CPU chose Scissors, you win");}
-        announce()
+    announce()
     }
 function ifPaper(){
     let RPS = Math.floor(Math.random()*3)
@@ -37,19 +35,17 @@ function ifPaper(){
         cpuItem = "Scissors"
         result = "lose"
         console.log("You chose Paper, the CPU chose Scissors, you lose");
-        announce()
     }else if(RPS==1){
         playerItem = "Paper"
         cpuItem = "Paper"
         result = "tie"
         console.log("You chose Paper, the CPU chose Paper, you tie");
-        announce()
     }else {
         playerItem = "Paper"
         cpuItem = "Rock"
         result = "win"
         console.log("You chose Paper, the CPU chose Rock, you win");}
-        announce()
+    announce()
     }
 function ifScissors(){
     let RPS = Math.floor(Math.random()*3)
@@ -58,19 +54,17 @@ function ifScissors(){
         cpuItem = "Rock"
         result = "lose"
         console.log("You chose Scissors, the CPU chose Rock, you lose");
-        announce()
     }else if(RPS==1){
         playerItem = "Scissors"
         cpuItem = "Scissors"
         result = "tie"
         console.log("You chose Scissors, the CPU chose Scissors, you tie");
-        announce()
     }else {
         playerItem = "Scissors"
         cpuItem = "Paper"
         result = "win"
         console.log("You chose Scissors, the CPU chose Paper, you win");}
-        announce()
+    announce()
     }
 
 announce()
