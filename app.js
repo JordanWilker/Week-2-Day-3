@@ -3,6 +3,11 @@ let cpuItem = "Nothing"
 let result = "haven't started"
 var playerWins = 0;
 var cpuWins = 0;
+let roundOver = document.getElementById("round-winner")
+let getRock = document.getElementById("Rock")
+let getBenjamins = document.getElementById("Paper")
+let getScissors = document.getElementById("Scissors")
+let playAgain = document.getElementById("play-again")
 
 
 function announce(){
@@ -12,6 +17,23 @@ function announce(){
     playWins.innerText = `You have ${playerWins} wins`;
     let computerWins = document.getElementById("computer-wins")
     computerWins.innerText = `The CPU has ${cpuWins} wins`
+    
+    if (playerWins >= 10){
+        roundOver.innerText = `You have Won the Round`
+        getRock.setAttribute("disabled","")
+        getBenjamins.setAttribute("disabled","")
+        getScissors.setAttribute("disabled","")
+        playAgain.removeAttribute("hidden")
+        
+    }else {}
+    if (cpuWins>=10){
+        roundOver.innerText = `You have Lost the Round`
+        getRock.setAttribute("disabled","")
+        getBenjamins.setAttribute("disabled","")
+        getScissors.setAttribute("disabled","")
+        playAgain.removeAttribute("hidden")
+
+    }else{}
 }
 
 function ifRock(){
@@ -78,5 +100,16 @@ function ifScissors(){
         console.log("You chose Scissors, the CPU chose Paper, you win");}
     announce()
     }
+
+function restartButton(){
+    playerWins=0
+    cpuWins=0
+    roundOver.innerText = ``
+    getRock.removeAttribute("disabled")
+    getBenjamins.removeAttribute("disabled")
+    getScissors.removeAttribute("disabled")
+    playAgain.setAttribute("hidden","")
+    announce()
+}
 
 announce()

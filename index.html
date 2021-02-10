@@ -22,13 +22,13 @@
           <div class="row">
             <!-- buttons start -->
             <div class="col-4">
-              <div class="btn btn-info shadow my-3" onclick="ifRock()">Rock</div>
+              <button class="btn btn-info shadow my-3" onclick="ifRock()"id="Rock">Rock</button>
             </div>
             <div class="col-4">
-              <div class="btn btn-info shadow my-3" onclick="ifPaper('Paper')">Paper</div>
+              <button class="btn btn-info shadow my-3" onclick="ifPaper('Paper')"id="Paper">Paper</button>
             </div>
             <div class="col-4">
-              <div class="btn btn-info shadow my-3"onclick="ifScissors('Scissors')">Scissors</div>
+              <button class="btn btn-info shadow my-3"onclick="ifScissors('Scissors')"id="Scissors">Scissors</button>
             </div>
             <!-- button end -->
           </div>
@@ -44,6 +44,16 @@
         </div>
         <div class="col-6" >
           <h2 id="computer-wins">The CPU has 0 wins</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <h1 id="round-winner"></h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <button class="btn btn-info my-3" id="play-again" hidden onclick="restartButton()">Restart Game?</button>
         </div>
       </div>
 
